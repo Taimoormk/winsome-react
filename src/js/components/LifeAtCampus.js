@@ -15,9 +15,9 @@ export default class LifeAtCampus extends Component {
             <div className="image-coloumn-1">
               <div className="image-container">
                 <img src="./image/gallery-image-1.jpg" alt="gallery-image" width={410.75} />
-                <div className="overlay">
+                {/* <div className="overlay">
                   <div className="icon"><i className="fa fa-arrows-alt"></i></div>
-                </div>
+                </div> */}
               </div>
               <div className="image-container">
                 <img src="./image/gallery-image-3.jpg" alt="gallery-image" width={410.75} />

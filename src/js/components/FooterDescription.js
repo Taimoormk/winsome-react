@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 export default class FooterDescripton extends Component {
   render() {
     return (
-      <div id="copyright">
+      <section id="copyright">
         <div className="wrapper">
           <div className="left">
             <a href="#" target="_blank"><i className="fa fa-facebook"></i></a>
@@ -19,7 +19,7 @@ export default class FooterDescripton extends Component {
           </div>
         </div>
         <div className="clear"></div>
-      </div>
+      </section>
     );
   }
 }

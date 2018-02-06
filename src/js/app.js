@@ -17,15 +17,35 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      homeHover: false
+      showMenu: false
     }
+    this.handleDropDown = this.handleDropDown.bind(this);
+    this.handlePullUp = this.handlePullUp.bind(this);
+  }
+
+  handleDropDown(e){
+    console.log('dropdown');
+    this.setState({
+      showMenu: true
+    });
+  }
+
+  handlePullUp(e){
+    console.log('pullup');
+    this.setState({
+      showMenu: false
+    })
   }
 
   render() {
+    console.log('this on app', this);
+    console.log('this.props on app', this.props)
     return (
       <div>
         <Header
-          homeHover = {this.state.homeHover}
+          showMenu={this.state.showMenu}
+          handleDropDown={this.handleDropDown}
+          handlePullUp={this.handlePullUp}
         />
         <HeroImage />
         <WhoWeAre />

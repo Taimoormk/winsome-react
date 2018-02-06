@@ -33,7 +33,7 @@ body {
                 text-decoration: none;
               }
               .drop-menu {
-                display: none;
+                display: block;
                 position: absolute;
                 min-width: 250px;
                 min-height: 100px;
@@ -210,11 +210,11 @@ body {
   // ########## WhatsBeenHapening Component ##########
   #whats-been-happening {
     margin-bottom: 120px;
+    height: 800px;
     .wrapper {
       margin: 0 auto;
       padding: 0 10px;
       width: 1200px;
-      height: 800px;
       h3 {
         font-family: 'Titillium-Regular';
         font-size: 45px;

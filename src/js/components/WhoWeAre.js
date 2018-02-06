@@ -25,7 +25,7 @@ export default class WhoWeAre extends Component {
           </div>
           <div className="our-kids">
             <h4>Our Kids</h4>
-            <iframe src="http://www.youtube.com/embed/W7qWa52k-nE" width="300" height="168.75" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://www.youtube.com/embed/W7qWa52k-nE" width="300" height="168.75"></iframe>
           </div>
         </div>
       </section>

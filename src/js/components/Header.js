@@ -4,9 +4,12 @@ import React, { Component } from 'react';
 // ########## Import Screens Here ##########
 
 // ########## Import Components Here ##########
+import DropDownMenu from './DropDownMenu';
 
 export default class Header extends Component {
   render() {
+    console.log('this on header', this);
+    console.log('this.props on header', this.props)
     return(
       <section id="header">
         <div className="wrapper">
@@ -16,54 +19,16 @@ export default class Header extends Component {
           <nav>
             <ul>
               <li>
-                <div className="dropdown">
-                  <a className="menu" href="#">Home</a>
-                  <div className="drop-menu">
-                      <a className="sub-menu" href="#">Link 1</a>
-                      <a className="sub-menu" href="#">Link 2</a>
-                      <a className="sub-menu" href="#">Link 3</a>
+                <div
+                  className="dropdown"
+                  onMouseEnter={this.props.handleDropDown}
+                  onMouseLeave={this.props.handlePullUp}
+                >
+                  <div className="menu" href="#">Home</div>
+                  <div>
+                    { this.props.showMenu && <DropDownMenu /> }
                   </div>
                 </div>
-              </li>
-              <li>
-                <div className="dropdown">
-                    <a className="menu" href="#">Services</a>
-                    <div className="drop-menu">
-                        <a className="sub-menu" href="#">Link 1</a>
-                        <a className="sub-menu" href="#">Link 2</a>
-                        <a className="sub-menu" href="#">Link 3</a>
-                    </div>
-                  </div>
-              </li>
-              <li>
-                <div className="dropdown">
-                  <a className="menu" href="#">About</a>
-                  <div className="drop-menu">
-                      <a className="sub-menu" href="#">Link 1</a>
-                      <a className="sub-menu" href="#">Link 2</a>
-                      <a className="sub-menu" href="#">Link 3</a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="dropdown">
-                    <a className="menu" href="#">Blogs</a>
-                    <div className="drop-menu">
-                        <a className="sub-menu" href="#">Link 1</a>
-                        <a className="sub-menu" href="#">Link 2</a>
-                        <a className="sub-menu" href="#">Link 3</a>
-                    </div>
-                  </div>
-              </li>
-              <li>
-                <div className="dropdown">
-                    <a className="menu" href="#">Contact</a>
-                    <div className="drop-menu">
-                        <a className="sub-menu" href="#">Link 1</a>
-                        <a className="sub-menu" href="#">Link 2</a>
-                        <a className="sub-menu" href="#">Link 3</a>
-                    </div>
-                  </div>
               </li>
             </ul>
           </nav>
