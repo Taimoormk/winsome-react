@@ -17,7 +17,11 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      showMenu: false
+      showHome: false,
+      showServices: false,
+      showAbout: false,
+      showBlogs: false,
+      showContact: false
     }
     this.handleDropDown = this.handleDropDown.bind(this);
     this.handlePullUp = this.handlePullUp.bind(this);
@@ -25,16 +29,54 @@ export default class App extends Component {
 
   handleDropDown(e){
     console.log('dropdown');
-    this.setState({
-      showMenu: true
-    });
+    console.log(e.target);
+    if (e.target.innerHTML === 'Home') {
+      this.setState({
+        showHome: true
+      })
+    } else if (e.target.innerHTML === 'Services') {
+      this.setState({
+        showServices: true
+      })
+    } else if (e.target.innerHTML === 'About') {
+      this.setState({
+        showAbout: true
+      })
+    } else if (e.target.innerHTML === 'Blogs') {
+      this.setState({
+        showBlogs: true
+      })
+    } else if (e.target.innerHTML === 'Contact') {
+      this.setState({
+        showContact: true
+      })
+    }
   }
 
   handlePullUp(e){
     console.log('pullup');
-    this.setState({
-      showMenu: false
-    })
+    console.log(e.target);
+    if (e.target.innerHTML === 'Home') {
+      this.setState({
+        showHome: false
+      })
+    } else if (e.target.innerHTML === 'Services') {
+      this.setState({
+        showServices: false
+      })
+    } else if (e.target.innerHTML === 'About') {
+      this.setState({
+        showAbout: false
+      })
+    } else if (e.target.innerHTML === 'Blogs') {
+      this.setState({
+        showBlogs: false
+      })
+    } else if (e.target.innerHTML === 'Contact') {
+      this.setState({
+        showContact: false
+      })
+    }
   }
 
   render() {
@@ -43,7 +85,11 @@ export default class App extends Component {
     return (
       <div>
         <Header
-          showMenu={this.state.showMenu}
+          showHome={this.state.showHome}
+          showServices={this.state.showServices}
+          showAbout={this.state.showAbout}
+          showBlogs={this.state.showBlogs}
+          showContact={this.state.showContact}
           handleDropDown={this.handleDropDown}
           handlePullUp={this.handlePullUp}
         />

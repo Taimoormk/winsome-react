@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 
 // ########## Import Components Here ##########
 
-export default class DropDownMenu extends Component {
+export default class HomeDropDownMenu extends Component {
   render() {
     return(
       <div>
