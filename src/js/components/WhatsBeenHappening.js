@@ -13,7 +13,9 @@ export default class WhatsBeenHappening extends Component {
           <h3>What's been happening</h3>
           <h4 className="section-h4">What it's like to be a part of our school community</h4>
           <div className="left">
-            <img className="blog-images" src="./image/blog-1.jpg" alt="blog" width={570} />
+            <div className="blog-image-wrapper">
+              <div className="blog-image"></div>
+            </div>
             <div className="blog-container">
               <p className="blog-info">June 27, 2017 | By Admin | In Sports</p>
               <h4 className="blog-heading">Blog title goes here</h4>
@@ -22,7 +24,10 @@ export default class WhatsBeenHappening extends Component {
             </div>
           </div>
           <div className="right">
-            <img className="blog-images" src="./image/blog-2.jpg" alt="blog" width={570} />
+            <div className="blog-image-wrapper">
+                <div className="blog-image"></div>
+            </div>
+            {/* <img className="blog-image" src="./image/blog-2.jpg" alt="blog" width={570} /> */}
             <div className="blog-container">
               <p className="blog-info">June 27, 2017 | By Admin | In Sports</p>
               <h4 className="blog-heading">Blog title goes here</h4>

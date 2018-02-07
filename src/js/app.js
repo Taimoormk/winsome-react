@@ -56,27 +56,34 @@ export default class App extends Component {
   handlePullUp(e){
     console.log('pullup');
     console.log(e.target);
-    if (e.target.innerHTML === 'Home') {
-      this.setState({
-        showHome: false
-      })
-    } else if (e.target.innerHTML === 'Services') {
-      this.setState({
-        showServices: false
-      })
-    } else if (e.target.innerHTML === 'About') {
-      this.setState({
-        showAbout: false
-      })
-    } else if (e.target.innerHTML === 'Blogs') {
-      this.setState({
-        showBlogs: false
-      })
-    } else if (e.target.innerHTML === 'Contact') {
-      this.setState({
-        showContact: false
-      })
-    }
+    this.setState({
+      showHome: false,
+      showServices: false,
+      showAbout: false,
+      showBlogs: false,
+      showContact: false
+    })
+    // if (e.target.innerHTML === 'Home') {
+    //   this.setState({
+    //     showHome: false
+    //   })
+    // } else if (e.target.innerHTML === 'Services') {
+    //   this.setState({
+    //     showServices: false
+    //   })
+    // } else if (e.target.innerHTML === 'About') {
+    //   this.setState({
+    //     showAbout: false
+    //   })
+    // } else if (e.target.innerHTML === 'Blogs') {
+    //   this.setState({
+    //     showBlogs: false
+    //   })
+    // } else if (e.target.innerHTML === 'Contact') {
+    //   this.setState({
+    //     showContact: false
+    //   })
+    // }
   }
 
   render() {

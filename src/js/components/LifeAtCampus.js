@@ -12,34 +12,45 @@ export default class LifeAtCampus extends Component {
         <div className="wrapper">
           <h4>Life at Campus</h4>
           <div className="gallery-container">
-            <div className="image-coloumn-1">
-              <div className="image-container">
-                <img src="./image/gallery-image-1.jpg" alt="gallery-image" width={410.75} />
-                {/* <div className="overlay">
-                  <div className="icon"><i className="fa fa-arrows-alt"></i></div>
-                </div> */}
+            <div className="gallery-image-coloumn-1">
+              <div className="gallery-image-wrapper-1">
+                <div className="gallery-image-1"></div>
+                <div className="gallery-overlay-1"></div>
+                <div className="gallery-icon-1 fa fa-arrows-v"></div>
               </div>
-              <div className="image-container">
-                <img src="./image/gallery-image-3.jpg" alt="gallery-image" width={410.75} />
-              </div>
-            </div>
-            <div className="image-coloumn-2">
-              <div className="image-container">
-                <img src="./image/gallery-image-2.jpg" alt="gallery-image" width={320} />
-              </div>
-              <div className="image-container">
-                <img src="./image/gallery-image-5.jpg" alt="gallery-image" width={320} />
-              </div>
-              <div className="image-container">
-                <img src="./image/gallery-image-7.jpg" alt="gallery-image" width={320} />
+              <div className="gallery-image-wrapper-3">
+                <div className="gallery-image-3"></div>
+                <div className="gallery-overlay-3"></div>
+                <div className="gallery-icon-3 fa fa-arrows-v"></div>
               </div>
             </div>
-            <div className="image-coloumn-3">
-              <div className="image-container">
-                <img src="./image/gallery-image-6.jpg" alt="gallery-image" width={410.75} />
+            <div className="gallery-image-coloumn-2">
+              <div className="gallery-image-wrapper-2">
+                <div className="gallery-image-2"></div>
+                <div className="gallery-overlay-2"></div>
+                <div className="gallery-icon-2 fa fa-arrows-v"></div>
               </div>
-              <div className="image-container">
-                <img src="./image/gallery-image-4.jpg" alt="gallery-image" width={410.75} />
+              <div className="gallery-image-wrapper-5">
+                <div className="gallery-image-5"></div>
+                <div className="gallery-overlay-5"></div>
+                <div className="gallery-icon-5 fa fa-arrows-v"></div>
+              </div>
+              <div className="gallery-image-wrapper-7">
+                <div className="gallery-image-7"></div>
+                <div className="gallery-overlay-7"></div>
+                <div className="gallery-icon-7 fa fa-arrows-v"></div>
+              </div>
+            </div>
+            <div className="gallery-image-coloumn-3">
+              <div className="gallery-image-wrapper-6">
+                <div className="gallery-image-6"></div>
+                <div className="gallery-overlay-6"></div>
+                <div className="gallery-icon-6 fa fa-arrows-v"></div>
+              </div>
+              <div className="gallery-image-wrapper-4">
+                <div className="gallery-image-4"></div>
+                <div className="gallery-overlay-4"></div>
+                <div className="gallery-icon-4 fa fa-arrows-v"></div>
               </div>
             </div>
           </div>
