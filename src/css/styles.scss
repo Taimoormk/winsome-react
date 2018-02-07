@@ -243,15 +243,48 @@ body {
           width: 570px;
           height: 350px;
           overflow: hidden;
-          .blog-image {
+          position: relative;
+          .blog-image-1 {
             width: 570px;
             height: 350px;
             background: #e8eced url('./image/blog-1.jpg') no-repeat center;
             background-size: cover;
             overflow: hidden;
           }
-          .blog-image:hover {
-            transform: scale(1.1);
+          .blog-overlay-1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            height: 100%;
+            width: 100%;
+            background-color: #0078ad;
+          }
+          .blog-icon-1 {
+            color: #ffffff;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: rotate(45deg);
+            font-size: 35px;
+          }
+          &:hover {
+            .blog-image-1 {
+              transform: scale(1.1);
+            }
+            .blog-overlay-1 {
+              display: block;
+              opacity: 0.8;
+              transition: .5s ease;
+            }
+            .blog-icon-1 {
+              display: block;
+              opacity: 1;
+            }
           }
         }
         .blog-container {
@@ -297,15 +330,55 @@ body {
           width: 570px;
           height: 350px;
           overflow: hidden;
-          .blog-image {
+          position: relative;
+          .blog-image-2 {
             width: 570px;
             height: 350px;
             background: #e8eced url('./image/blog-2.jpg') no-repeat center;
             background-size: cover;
             overflow: hidden;
           }
-          .blog-image:hover {
-            transform: scale(1.1);
+          .blog-image-2 {
+            width: 570px;
+            height: 350px;
+            background: #e8eced url('./image/blog-2.jpg') no-repeat center;
+            background-size: cover;
+            overflow: hidden;
+          }
+          .blog-overlay-2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+            height: 100%;
+            width: 100%;
+            background-color: #0078ad;
+          }
+          .blog-icon-2 {
+            color: #ffffff;
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform: rotate(45deg);
+            font-size: 35px;
+          }
+          &:hover {
+            .blog-image-2 {
+              transform: scale(1.1);
+            }
+            .blog-overlay-2 {
+              display: block;
+              opacity: 0.8;
+              transition: .5s ease;
+            }
+            .blog-icon-2 {
+              display: block;
+              opacity: 1;
+            }
           }
         }
         .blog-container {
