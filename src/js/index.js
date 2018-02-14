@@ -7,8 +7,12 @@ import ReactDOM from 'react-dom';
 // ########## Import Components Here ##########
 import '../css/styles.scss';
 import App from './app';
+import Board from './screens/Board';
+import Heritage from './screens/Heritage';
 
 ReactDOM.render(
-  <App />,
+  // <App />,
+  // <Board />,
+  <Heritage />,
   document.querySelector('#app')
 )

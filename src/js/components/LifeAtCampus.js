@@ -4,9 +4,12 @@ import React, { Component } from 'react';
 // ########## Import Screens Here ##########
 
 // ########## Import Components Here ##########
+import LightBox from './LightBox';
 
 export default class LifeAtCampus extends Component {
   render() {
+    console.log('this on lifeatcampus', this);
+    console.log('this.props on lifeatcampus', this.props)
     return (
       <section id="life-at-campus">
         <div className="wrapper">
@@ -14,9 +17,16 @@ export default class LifeAtCampus extends Component {
           <div className="gallery-container">
             <div className="gallery-image-coloumn-1">
               <div className="gallery-image-wrapper-1">
+              <LightBox
+                  openLightBox={this.props.openLightBox}
+                  closeLightBox={this.props.closeLightBox}
+                  handleOpenLightBox={this.props.handleOpenLightBox}
+                  handleCloseLightBox={this.props.handleCloseLightBox}
+                />
                 <div className="gallery-image-1"></div>
                 <div className="gallery-overlay-1"></div>
                 <div className="gallery-icon-1 fa fa-arrows-v"></div>
+
               </div>
               <div className="gallery-image-wrapper-3">
                 <div className="gallery-image-3"></div>

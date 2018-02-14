@@ -11,6 +11,8 @@ import WhatsBeenHappening from './components/WhatsBeenHappening';
 import LifeAtCampus from './components/LifeAtCampus';
 import Footer from './components/Footer';
 import FooterDescription from './components/FooterDescription';
+import HomeMenu from './components/MenuItems/HomeMenu';
+import ServicesMenu from './components/MenuItems/ServicesMenu';
 
 export default class App extends Component {
   
@@ -21,36 +23,45 @@ export default class App extends Component {
       showServices: false,
       showAbout: false,
       showBlogs: false,
-      showContact: false
+      showContact: false,
+      openLightBox: false,
+      closeLightBox: true,
+      menuItems: [<HomeMenu />, <ServicesMenu />, 'About', 'Blogs', 'Contact'],
     }
     this.handleDropDown = this.handleDropDown.bind(this);
     this.handlePullUp = this.handlePullUp.bind(this);
+    this.handleOpenLightBox = this.handleOpenLightBox.bind(this);
+    this.handleCloseLightBox = this.handleCloseLightBox.bind(this);
   }
 
   handleDropDown(e){
     console.log('dropdown');
-    console.log(e.target);
-    if (e.target.innerHTML === 'Home') {
-      this.setState({
-        showHome: true
-      })
-    } else if (e.target.innerHTML === 'Services') {
-      this.setState({
-        showServices: true
-      })
-    } else if (e.target.innerHTML === 'About') {
-      this.setState({
-        showAbout: true
-      })
-    } else if (e.target.innerHTML === 'Blogs') {
-      this.setState({
-        showBlogs: true
-      })
-    } else if (e.target.innerHTML === 'Contact') {
-      this.setState({
-        showContact: true
-      })
-    }
+    console.log('handleDropDown', e);
+    // if (e.target === 'HomeMenu') {
+    //   this.setState({
+    //     showHome: true
+    //   })
+    // } else if (e.target.innerHTML === 'Services') {
+    //   this.setState({
+    //     showServices: true
+    //   })
+    // } else if (e.target.innerHTML === 'About') {
+    //   this.setState({
+    //     showAbout: true
+    //   })
+    // } else if (e.target.innerHTML === 'Blogs') {
+    //   this.setState({
+    //     showBlogs: true
+    //   })
+    // } else if (e.target.innerHTML === 'Contact') {
+    //   this.setState({
+    //     showContact: true
+    //   })
+    // }
+    this.setState({
+      showHome: true,
+      showServices: true
+    })
   }
 
   handlePullUp(e){
@@ -63,27 +74,18 @@ export default class App extends Component {
       showBlogs: false,
       showContact: false
     })
-    // if (e.target.innerHTML === 'Home') {
-    //   this.setState({
-    //     showHome: false
-    //   })
-    // } else if (e.target.innerHTML === 'Services') {
-    //   this.setState({
-    //     showServices: false
-    //   })
-    // } else if (e.target.innerHTML === 'About') {
-    //   this.setState({
-    //     showAbout: false
-    //   })
-    // } else if (e.target.innerHTML === 'Blogs') {
-    //   this.setState({
-    //     showBlogs: false
-    //   })
-    // } else if (e.target.innerHTML === 'Contact') {
-    //   this.setState({
-    //     showContact: false
-    //   })
-    // }
+  }
+
+  handleOpenLightBox(e) {
+    console.log('openLightBox clicked');
+    console.log(e.target);
+    this.setState({
+      openLightBox: true,
+    })
+  }
+
+  handleCloseLightBox(e) {
+    console.log('closeLightBox')
   }
 
   render() {
@@ -92,6 +94,7 @@ export default class App extends Component {
     return (
       <div>
         <Header
+          menuItems={this.state.menuItems}
           showHome={this.state.showHome}
           showServices={this.state.showServices}
           showAbout={this.state.showAbout}
@@ -103,7 +106,12 @@ export default class App extends Component {
         <HeroImage />
         <WhoWeAre />
         <WhatsBeenHappening />
-        <LifeAtCampus />
+        <LifeAtCampus 
+          openLightBox={this.state.openLightBox}
+          closeLightBox={this.state.closeLightBox}
+          handleOpenLightBox={this.handleOpenLightBox}
+          handleCloseLightBox={this.handleCloseLightBox}
+        />
         <Footer />
         <FooterDescription />
       </div>

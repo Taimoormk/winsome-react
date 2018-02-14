@@ -4,14 +4,21 @@ import React, { Component } from 'react';
 // ########## Import Screens Here ##########
 
 // ########## Import Components Here ##########
-import HomeDropDownMenu from './HomeDropDownMenu';
-import ServicesDropDownMenu from './ServicesDropDownMenu';
-import AboutDropDownMenu from './AboutDropDownMenu';
-import BlogsDropDownMenu from './BlogsDropDownMenu';
-import ContactDropDownMenu from './ContactDropDownMenu';
+import HomeMenu from './MenuItems/HomeMenu';
+import ServicesMenu from './MenuItems/ServicesMenu';
+import HomeDropDownMenu from './MenuItems/DropDownMenuItems/HomeDropDownMenu';
+import ServicesDropDownMenu from './MenuItems/DropDownMenuItems/ServicesDropDownMenu';
+import AboutDropDownMenu from './MenuItems/DropDownMenuItems/AboutDropDownMenu';
+import BlogsDropDownMenu from './MenuItems/DropDownMenuItems/BlogsDropDownMenu';
+import ContactDropDownMenu from './MenuItems/DropDownMenuItems/ContactDropDownMenu';
 
 export default class Header extends Component {
   render() {
+    // var renderMenu = this.props.menuItems.map(function(v, i){
+    //   return (
+    //     <li key={i}>{v}</li>
+    //   );
+    // })
     console.log('this on header', this);
     console.log('this.props on header', this.props)
     return(
@@ -23,18 +30,22 @@ export default class Header extends Component {
           <nav>
             <ul>
               <li>
-                <div
-                  className="dropdown"
-                  onMouseEnter={this.props.handleDropDown}
-                  onMouseLeave={this.props.handlePullUp}
-                >
-                  <div className="menu" href="#">Home</div>
-                  <div>
-                    { this.props.showHome && <HomeDropDownMenu /> }
-                  </div>
-                </div>
+                <HomeMenu 
+                  // menuItems={this.props.menuItems}
+                  showHome={this.props.showHome}
+                  handleDropDown={this.props.handleDropDown}
+                  handlePullUp={this.props.handlePullUp}
+                />
               </li>
               <li>
+                <ServicesMenu 
+                  menuItems={this.props.menuItems}
+                  showServices={this.props.showServices}
+                  handleDropDown={this.props.handleDropDown}
+                  handlePullUp={this.props.handlePullUp}
+                />
+              </li>
+              {/* <li>
                 <div
                   className="dropdown"
                   onMouseEnter={this.props.handleDropDown}
@@ -81,7 +92,7 @@ export default class Header extends Component {
                     { this.props.showContact && <ContactDropDownMenu /> }
                   </div>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

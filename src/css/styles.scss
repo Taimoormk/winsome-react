@@ -33,6 +33,7 @@ body {
                 text-decoration: none;
               }
               .drop-menu {
+                // background-color: #0078ad;
                 display: block;
                 position: absolute;
                 min-width: 250px;
@@ -53,7 +54,7 @@ body {
     }
   }
 
-  // ########## HeroImage Component ##########
+  // ########## HeroImage Home Component ##########
   #hero-image {
     height: calc(100vh - 100px);
     background: #e8eced url('../image/hero.jpg') no-repeat center;
@@ -124,7 +125,7 @@ body {
     }
   }
 
-  // ########## WhoWeAre Component ##########
+  // ########## WhoWeAre Home Component ##########
   #who-we-are {
     background-color: #0078ad;
     height: 400px;
@@ -483,6 +484,72 @@ body {
               .gallery-icon-1 {
                 display: block;
                 opacity: 1;
+              }
+            }
+
+            #lightbox {
+              // display: none;
+              position: fixed;
+              // z-index: 1;
+              // padding-top: 100px;
+              left: 0;
+              right: 0;
+              width: 100%;
+              height: 100vh;
+              // overflow: auto;
+              background-color: #6d6d6d;
+              // cursor: pointer;
+              .close {
+                color: #252020;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 35px;
+                font-weight: bold;
+              }
+              // &:hover, &:focus {
+              //   color: #999;
+              //   text-transform: none;
+              //   cursor: pointer;
+              // }
+              .lightbox-container {
+                position: relative;
+                background-color: #8bd3f5;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+                .slides {
+                  // display: none;
+                  .slide-number {
+                    color: #ffffff;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0px;
+                  }
+                  .slide-image {
+                    width: 100%;
+                  }
+                }
+                .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -50px;
+                  color: #ffffff;
+                  font-weight: bold;
+                  font-size: 20px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                }
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
               }
             }
           }
@@ -847,7 +914,7 @@ body {
     }
   }
 
-  // ########## HeroImage Component ##########
+  // ########## FooterDescription Component ##########
   #copyright {
     background-color: #10406e;
     height: 50px;
@@ -879,6 +946,224 @@ body {
     }
     .clear {
       clear: both;
+    }
+  }
+
+  // ########## BoardTitleHeader Component ##########
+  #board-title-header {
+    height: 250px;
+    background: #e8eced url('../image/hero.jpg') no-repeat center;
+    background-size: cover;
+    .board-title-heading {
+      font-family: 'Titillium-Regular';
+      font-size: 55px;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      color: #ffffff;
+      margin: 0px;
+      line-height: 250px;
+      box-sizing: border-box;
+    }
+  }
+
+  // ########## BoardIntro Component ##########
+  #board-intro {
+    height: 400px;
+    .wrapper {
+      margin: 0 auto;
+      padding: 0 10px;
+      width: 1200px;
+      .intro-left {
+        float: left;
+        width: 47%;
+        margin: 15px;
+        padding-top: 30px;
+        .intro-heading {
+          font-family: 'Titillium-Regular';
+          font-size: 30px;
+          margin: 0px;
+          position: relative;
+          color: #0078ad;
+          text-align: left;
+          line-height: 1.3em;
+        }
+      }
+      .intro-right {
+        float: left;
+        width: 47%;
+        margin: 15px;
+        padding-top: 30px;
+        .intro-heading {
+          font-family: 'Titillium-Regular';
+          font-size: 30px;
+          margin: 0px;
+          position: relative;
+          color: #0078ad;
+          text-align: left;
+          line-height: 1.3em;
+        }
+      }
+    }
+  }
+
+  // ########## BoardMembers1 Component ##########
+  #board-members-1 {
+    height: 500px;
+    background-color: #eff0f1;
+    .wrapper {
+      margin: 0 auto;
+      padding: 0 10px;
+      width: 1200px;
+      .board-members-col-container {
+        position: relative;
+        top: 35px;
+        .board-members-col {
+          width: 30%;
+          float: left;
+          margin: 10px;
+          .board-member-container {
+            width: 95%;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 5px 5px 5px #8bd3f5;
+            .board-member-box {
+              padding: 20px;
+              .board-person-name {
+                margin: 0px;
+                font-size: 20px;
+                font-family: 'Titillium-Regular';
+                color: #0078ad;
+              }
+              .board-person-designation {
+                margin: 0px;
+                font-size: 18px;
+                font-family: 'Titillium-Regular';
+                color: #6d6d6d;
+              }
+              .board-person-details {
+                margin: 0px;
+                padding-top: 15px;
+                line-height: 1.4em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ########## BoardMembers2 Component ##########
+  #board-members-2 {
+    height: 500px;
+    // background-color: #eff0f1;
+    .wrapper {
+      margin: 0 auto;
+      padding: 0 10px;
+      width: 1200px;
+      .board-members-col-container {
+        position: relative;
+        top: 35px;
+        .board-members-col {
+          width: 30%;
+          float: left;
+          margin: 10px;
+          .board-member-container {
+            width: 95%;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 5px 5px 5px #8bd3f5;
+            .board-member-box {
+              padding: 20px;
+              .board-person-name {
+                margin: 0px;
+                font-size: 20px;
+                font-family: 'Titillium-Regular';
+                color: #0078ad;
+              }
+              .board-person-designation {
+                margin: 0px;
+                font-size: 18px;
+                font-family: 'Titillium-Regular';
+                color: #6d6d6d;
+              }
+              .board-person-details {
+                margin: 0px;
+                padding-top: 15px;
+                line-height: 1.4em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ########## HeritageTitleHeader Component ##########
+  #heritage-title-header {
+    height: 250px;
+    background: #e8eced url('../image/hero.jpg') no-repeat center;
+    background-size: cover;
+    .heritage-title-heading {
+      font-family: 'Titillium-Regular';
+      font-size: 55px;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+      color: #ffffff;
+      margin: 0px;
+      line-height: 250px;
+      box-sizing: border-box;
+    }
+  }
+
+  // ########## BoardIntro Component ##########
+  #heritage-intro {
+    height: 500px;
+    .wrapper {
+      .heritage-heading {
+        font-family: 'Titillium-Regular';
+        font-size: 45px;
+        text-transform: uppercase;
+        margin: 0px;
+        position: relative;
+        color: #0078ad;
+        top: 30px;
+        text-align: center;
+      }
+      margin: 0 auto;
+      padding: 0 10px;
+      width: 1200px;
+      .intro-left {
+        float: left;
+        width: 47%;
+        margin: 15px;
+        padding-top: 60px;
+        .intro-heading {
+          font-family: 'Titillium-Regular';
+          font-size: 30px;
+          margin: 0px;
+          position: relative;
+          color: #0078ad;
+          text-align: left;
+          line-height: 1.3em;
+        }
+      }
+      .intro-right {
+        float: left;
+        width: 47%;
+        margin: 15px;
+        padding-top: 60px;
+        .intro-heading {
+          font-family: 'Titillium-Regular';
+          font-size: 30px;
+          margin: 0px;
+          position: relative;
+          color: #0078ad;
+          text-align: left;
+          line-height: 1.3em;
+        }
+      }
     }
   }
 }
