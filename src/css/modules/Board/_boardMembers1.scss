@@ -1,0 +1,44 @@
+#board-members-1 {
+  height: 500px;
+  background-color: #eff0f1;
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1200px;
+    .board-members-col-container {
+      position: relative;
+      top: 35px;
+      .board-members-col {
+        width: 30%;
+        float: left;
+        margin: 10px;
+        .board-member-container {
+          width: 95%;
+          align-items: center;
+          background-color: #ffffff;
+          box-shadow: 5px 5px 5px #8bd3f5;
+          .board-member-box {
+            padding: 20px;
+            .board-person-name {
+              margin: 0px;
+              font-size: 20px;
+              font-family: 'Titillium-Regular';
+              color: #0078ad;
+            }
+            .board-person-designation {
+              margin: 0px;
+              font-size: 18px;
+              font-family: 'Titillium-Regular';
+              color: #6d6d6d;
+            }
+            .board-person-details {
+              margin: 0px;
+              padding-top: 15px;
+              line-height: 1.4em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+#heritage-intro {
+  height: 500px;
+  .wrapper {
+    .heritage-heading {
+      font-family: 'Titillium-Regular';
+      font-size: 45px;
+      text-transform: uppercase;
+      margin: 0px;
+      position: relative;
+      color: #0078ad;
+      top: 30px;
+      text-align: center;
+    }
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1200px;
+    .intro-left {
+      float: left;
+      width: 47%;
+      margin: 15px;
+      padding-top: 60px;
+      .intro-heading {
+        font-family: 'Titillium-Regular';
+        font-size: 30px;
+        margin: 0px;
+        position: relative;
+        color: #0078ad;
+        text-align: left;
+        line-height: 1.3em;
+      }
+    }
+    .intro-right {
+      float: left;
+      width: 47%;
+      margin: 15px;
+      padding-top: 60px;
+      .intro-heading {
+        font-family: 'Titillium-Regular';
+        font-size: 30px;
+        margin: 0px;
+        position: relative;
+        color: #0078ad;
+        text-align: left;
+        line-height: 1.3em;
+      }
+    }
+  }
+}

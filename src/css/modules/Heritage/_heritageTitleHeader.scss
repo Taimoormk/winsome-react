@@ -1,0 +1,16 @@
+#heritage-title-header {
+  height: 250px;
+  background: #e8eced url('../image/hero.jpg') no-repeat center;
+  background-size: cover;
+  .heritage-title-heading {
+    font-family: 'Titillium-Regular';
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    margin: 0px;
+    line-height: 250px;
+    box-sizing: border-box;
+  }
+}

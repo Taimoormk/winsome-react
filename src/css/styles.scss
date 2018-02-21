@@ -1,6 +1,7 @@
 @import './partials/mixins';
 @import './partials/variables';
 
+// ########## Import Home Styles Here ##########
 @import './modules/header';
 @import './modules/heroImage';
 @import './modules/whoWeAre';
@@ -9,225 +10,17 @@
 @import './modules/footer';
 @import './modules/footerDescription';
 
+// ########## Import Board Styles Here ##########
+@import './modules/Board/boardTitleHeader';
+@import './modules/Board/boardIntro';
+@import './modules/Board/boardMembers1';
+@import './modules/Board/boardMembers2';
+
+// ########## Import Heritage Styles Here ##########
+@import './modules/Heritage/heritageTitleHeader';
+@import './modules/Heritage/heritageIntro';
+
 body {
   margin: 0;
   font-family: $font-family;
-
-  // ########## BoardTitleHeader Component ##########
-  #board-title-header {
-    height: 250px;
-    background: #e8eced url('../image/hero.jpg') no-repeat center;
-    background-size: cover;
-    .board-title-heading {
-      font-family: 'Titillium-Regular';
-      font-size: 55px;
-      text-transform: uppercase;
-      text-align: center;
-      position: relative;
-      color: #ffffff;
-      margin: 0px;
-      line-height: 250px;
-      box-sizing: border-box;
-    }
-  }
-
-  // ########## BoardIntro Component ##########
-  #board-intro {
-    height: 400px;
-    .wrapper {
-      margin: 0 auto;
-      padding: 0 10px;
-      width: 1200px;
-      .intro-left {
-        float: left;
-        width: 47%;
-        margin: 15px;
-        padding-top: 30px;
-        .intro-heading {
-          font-family: 'Titillium-Regular';
-          font-size: 30px;
-          margin: 0px;
-          position: relative;
-          color: #0078ad;
-          text-align: left;
-          line-height: 1.3em;
-        }
-      }
-      .intro-right {
-        float: left;
-        width: 47%;
-        margin: 15px;
-        padding-top: 30px;
-        .intro-heading {
-          font-family: 'Titillium-Regular';
-          font-size: 30px;
-          margin: 0px;
-          position: relative;
-          color: #0078ad;
-          text-align: left;
-          line-height: 1.3em;
-        }
-      }
-    }
-  }
-
-  // ########## BoardMembers1 Component ##########
-  #board-members-1 {
-    height: 500px;
-    background-color: #eff0f1;
-    .wrapper {
-      margin: 0 auto;
-      padding: 0 10px;
-      width: 1200px;
-      .board-members-col-container {
-        position: relative;
-        top: 35px;
-        .board-members-col {
-          width: 30%;
-          float: left;
-          margin: 10px;
-          .board-member-container {
-            width: 95%;
-            align-items: center;
-            background-color: #ffffff;
-            box-shadow: 5px 5px 5px #8bd3f5;
-            .board-member-box {
-              padding: 20px;
-              .board-person-name {
-                margin: 0px;
-                font-size: 20px;
-                font-family: 'Titillium-Regular';
-                color: #0078ad;
-              }
-              .board-person-designation {
-                margin: 0px;
-                font-size: 18px;
-                font-family: 'Titillium-Regular';
-                color: #6d6d6d;
-              }
-              .board-person-details {
-                margin: 0px;
-                padding-top: 15px;
-                line-height: 1.4em;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // ########## BoardMembers2 Component ##########
-  #board-members-2 {
-    height: 500px;
-    // background-color: #eff0f1;
-    .wrapper {
-      margin: 0 auto;
-      padding: 0 10px;
-      width: 1200px;
-      .board-members-col-container {
-        position: relative;
-        top: 35px;
-        .board-members-col {
-          width: 30%;
-          float: left;
-          margin: 10px;
-          .board-member-container {
-            width: 95%;
-            align-items: center;
-            background-color: #ffffff;
-            box-shadow: 5px 5px 5px #8bd3f5;
-            .board-member-box {
-              padding: 20px;
-              .board-person-name {
-                margin: 0px;
-                font-size: 20px;
-                font-family: 'Titillium-Regular';
-                color: #0078ad;
-              }
-              .board-person-designation {
-                margin: 0px;
-                font-size: 18px;
-                font-family: 'Titillium-Regular';
-                color: #6d6d6d;
-              }
-              .board-person-details {
-                margin: 0px;
-                padding-top: 15px;
-                line-height: 1.4em;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // ########## HeritageTitleHeader Component ##########
-  #heritage-title-header {
-    height: 250px;
-    background: #e8eced url('../image/hero.jpg') no-repeat center;
-    background-size: cover;
-    .heritage-title-heading {
-      font-family: 'Titillium-Regular';
-      font-size: 55px;
-      text-transform: uppercase;
-      text-align: center;
-      position: relative;
-      color: #ffffff;
-      margin: 0px;
-      line-height: 250px;
-      box-sizing: border-box;
-    }
-  }
-
-  // ########## BoardIntro Component ##########
-  #heritage-intro {
-    height: 500px;
-    .wrapper {
-      .heritage-heading {
-        font-family: 'Titillium-Regular';
-        font-size: 45px;
-        text-transform: uppercase;
-        margin: 0px;
-        position: relative;
-        color: #0078ad;
-        top: 30px;
-        text-align: center;
-      }
-      margin: 0 auto;
-      padding: 0 10px;
-      width: 1200px;
-      .intro-left {
-        float: left;
-        width: 47%;
-        margin: 15px;
-        padding-top: 60px;
-        .intro-heading {
-          font-family: 'Titillium-Regular';
-          font-size: 30px;
-          margin: 0px;
-          position: relative;
-          color: #0078ad;
-          text-align: left;
-          line-height: 1.3em;
-        }
-      }
-      .intro-right {
-        float: left;
-        width: 47%;
-        margin: 15px;
-        padding-top: 60px;
-        .intro-heading {
-          font-family: 'Titillium-Regular';
-          font-size: 30px;
-          margin: 0px;
-          position: relative;
-          color: #0078ad;
-          text-align: left;
-          line-height: 1.3em;
-        }
-      }
-    }
-  }
 }
