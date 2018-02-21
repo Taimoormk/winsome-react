@@ -26,7 +26,6 @@ export default class LifeAtCampus extends Component {
                 <div className="gallery-image-1"></div>
                 <div className="gallery-overlay-1"></div>
                 <div className="gallery-icon-1 fa fa-arrows-v"></div>
-
               </div>
               <div className="gallery-image-wrapper-3">
                 <div className="gallery-image-3"></div>

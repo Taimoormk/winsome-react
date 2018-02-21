@@ -1,0 +1,82 @@
+#who-we-are {
+  background-color: #0078ad;
+  height: 400px;
+  .wrapper {
+    @include wrapper(1200px);
+    box-sizing: border-box;
+    .who-we-are {
+      float: left;
+      width: 30%;
+      margin: 10px;
+      color: #ffffff;
+      h4 {
+        font-family: $font-family;
+        font-size: 35px;
+        text-align: center;
+        margin: 0px;
+        padding-top: 60px;
+      }
+      p {
+        font-family: $font-family;
+        font-size: 15px;
+        line-height: 23px;
+      }
+      button {
+        background-color: #0078ad; // border: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: $font-family;
+        padding: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+    .year-groups {
+      float: left;
+      width: 30%;
+      margin: 10px;
+      color: #ffffff;
+      h4 {
+        font-family: $font-family;
+        font-size: 35px;
+        text-align: center;
+        margin: 0px;
+        padding-top: 60px;
+      }
+      p {
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+      button {
+        background-color: #0078ad; // border: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: $font-family;
+        padding: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+    .our-kids {
+      float: left;
+      width: 30%;
+      margin: 10px;
+      color: #ffffff;
+      h4 {
+        font-family: $font-family;
+        font-size: 35px;
+        text-align: center;
+        margin: 0px;
+        padding-top: 60px;
+      }
+      iframe {
+        margin-top: 15px;
+        border: 0;
+        width: 300px;
+        height: 168.75px
+      }
+    }
+  }
+}

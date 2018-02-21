@@ -1,0 +1,44 @@
+@mixin wrapper($width) {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: $width;
+}
+
+@mixin H2($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: $t-a;
+  color: $c;
+  margin: 0px;
+  position: relative;
+  top: 250px;
+}
+
+@mixin H3($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: $t-a;
+  color: $c;
+  margin: 0px;
+  position: relative;
+}
+
+@mixin H4($t-a, $c) {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 35px;
+  text-align: $t-a;
+  color: $c;
+  margin: 0px;
+  position: relative;
+}
+
+@mixin blog-image($bic, $bil) {
+  width: 570px;
+  height: 350px;
+  background: $bic url($bil) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}

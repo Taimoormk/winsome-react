@@ -1,0 +1,31 @@
+#copyright {
+  background-color: #10406e;
+  height: 50px;
+  .wrapper {
+    @include wrapper(1200px);
+    box-sizing: border-box;
+    .left {
+      float: left;
+      padding-top: 15px;
+      a {
+        color: #ffffff;
+        padding: 5px;
+      }
+    }
+    .right {
+      float: right;
+      p {
+        color: #ffffff;
+        font-family: $font-family;
+        font-size: 13px;
+        padding-top: 7px;
+        a {
+          color: #8bd3f5;
+        }
+      }
+    }
+  }
+  .clear {
+    clear: both;
+  }
+}

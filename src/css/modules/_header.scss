@@ -1,0 +1,48 @@
+#header {
+  height: 100px;
+  .wrapper {
+    @include wrapper(1200px);
+    .logo {
+      float: left;
+      margin-top: 15px;
+    }
+    nav {
+      float: right;
+      ul {
+        list-style-type: none;
+        display: inline-block;
+        position: relative;
+        li {
+          float: left;
+          margin-top: 27px;
+          .dropdown {
+            position: relative;
+            display: inline-block;
+            .menu {
+              color: #000000;
+              text-transform: uppercase;
+              font-weight: bold;
+              margin-right: 30px;
+              text-decoration: none;
+            }
+            .drop-menu {
+              // background-color: #0078ad;
+              display: block;
+              position: absolute;
+              min-width: 250px;
+              min-height: 100px;
+              padding: 15px 15px;
+              .sub-menu {
+                color: #000000;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-right: 25px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

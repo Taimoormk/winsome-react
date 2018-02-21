@@ -13,10 +13,10 @@ export default class HeroImage extends Component {
           <h2>Rigorous Minds</h2>
           <h3>Compassionate Hearts</h3>
           <div className="button-container">
-            <button className="hero-button alpha-1"><i className="fa fa-facebook hero-button-icon"></i>Childcare<br /><span className="hero-button-learn">Learn More</span></button>
-            <button className="hero-button alpha-2"><i className="fa fa-facebook hero-button-icon"></i>Kindy + Pre<br /><span className="hero-button-learn">Learn More</span></button>
-            <button className="hero-button alpha-3"><i className="fa fa-facebook hero-button-icon"></i>Primary<br /><span className="hero-button-learn">Learn More</span></button>
-            <button className="hero-button alpha-4"><i className="fa fa-facebook hero-button-icon"></i>Secondary<br /><span className="hero-button-learn">Learn More</span></button>
+            <button className="hero-button alpha"><i className="fa fa-facebook hero-button-icon"></i>Childcare<br /><span className="hero-button-learn">Learn More</span></button>
+            <button className="hero-button alpha"><i className="fa fa-facebook hero-button-icon"></i>Kindy + Pre<br /><span className="hero-button-learn">Learn More</span></button>
+            <button className="hero-button alpha"><i className="fa fa-facebook hero-button-icon"></i>Primary<br /><span className="hero-button-learn">Learn More</span></button>
+            <button className="hero-button alpha"><i className="fa fa-facebook hero-button-icon"></i>Secondary<br /><span className="hero-button-learn">Learn More</span></button>
           </div>
         </div>
       </section>
