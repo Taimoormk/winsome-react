@@ -4,7 +4,10 @@ const glob = require('glob-all')
 var PurifyCSSPlugin= require('purifycss-webpack'); 
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: [
+    './src/js/index.jsx',
+    ',/src/css/styles.scss',
+  ],
   output: {
     path: `${__dirname}/dist/js`,
     filename: 'bundle.js',
@@ -15,12 +18,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: ['env', 'react'],
+            plugins: ["transform-object-rest-spread", ]
+          }
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env'],
             plugins: ["transform-object-rest-spread", ]
           }
         }
@@ -54,7 +68,9 @@ module.exports = {
       }
     ]
   },
-
+  resolve: {
+    extensions:['.js', '.jsx']
+  },
   plugins: [
     new ExtractTextPlugin({
       filename: '../css/styles.css'
